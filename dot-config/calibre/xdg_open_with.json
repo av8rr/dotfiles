@@ -1,0 +1,79 @@
+{
+  "entries": {
+    "pdf": [
+      {
+        "Categories": "Office;Viewer;",
+        "Comment": "A minimalistic document viewer",
+        "Exec": [
+          "zathura",
+          "%U"
+        ],
+        "MimeType": [
+          "",
+          "application/oxps",
+          "application/epub+zip",
+          "application/x-fictionbook",
+          "application/pdf"
+        ],
+        "Name": "Zathura",
+        "NoDisplay": "true",
+        "Terminal": "false",
+        "Type": "Application",
+        "Version": "1.0",
+        "desktop_file_path": "/usr/share/applications/org.pwmt.zathura-pdf-mupdf.desktop",
+        "uuid": "fa8710c6-2cea-4de8-a5a4-60c9e02f35b2"
+      }
+    ]
+  },
+  "geometry-of-choose-open-with-program-dialog-geometry": {
+    "frame_geometry": {
+      "height": 504,
+      "width": 604,
+      "x": 850,
+      "y": 468
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 500,
+      "width": 600,
+      "x": 852,
+      "y": 470
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 500,
+      "width": 600,
+      "x": 852,
+      "y": 470
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAANSAAAB1AAABa0AAAPLAAADVAAAAdYAAAWrAAADyQAAAAAAAAAACQAAAANUAAAB1gAABasAAAPJ"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Display",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+#+TITLE: Instructions to Execute after Installing Linux
+#+DATE:  February 15, 2022 
+#+PROPERTY:  header-args:shell :tangle ~/.config/linuxconfig/_afterninstall.sh
+
+After installing Linux, do this:
+
+
+* System Tools and Utilities
+
+** Wireless Setup
+
+ifconfig - shows wireless and wired adapters
+
+sudo iwconfig <adapter> essid <up|down>
+sudo iwconfig <adapter> essid <network_name> key <wireless_key> 
+
+
+** Utilities
+
+- xterm
+- Kitty
+- Alacritty
+- Tmux
+- zsh
+- sxhkd
+- dmenu
+- bsdmainutils
+- picom
+- gnupg2
+- Pass
+- bluetooth-manager
+- nm-applet
+- tree
+  
+** Tools 
+
+- polybar
+- stow
+- git
+- wmctrl
+- aspell, aspell-en
+- pcman-fm
+- calcurse
+- termbin
+
+* Applications
+
+- neofetch
+- amixer
+- pulsemixer
+curl https://raw.githubusercontent.com/GeorgeFilipkin/pulsemixer/master/pulsemixer > pulsemixer && chmod +x ./pulsemixer
+- PulseEEffects
+- ncmpc - music player client
+- Fonts-Powerline
+- PowerLevel 10k
+- Zathura
+- Galculator
+
+** Emacs
+
+*** mbsync
+
+*** ispell
+
+*** hunspell
+
+*** LaTex
+
+*** auctex
+
+** Geany
+
+** Dia
+
+** Media
+
+- VLC
+- Handbrake
+- mpd - music player daemon (use emacs as the client)
+- mpv
+
+** Graphics and Image Processing
+
+- Inkscape
+- GIMP
+- Raw Therapee
+- Darktable
+
+** Digikam
+
+** Caibre
+
+** Browsers
+
+- Brave
+- Qutebrowser
+- Firefox
+
+** Teams
+
+** Zoom
+https://linuxize.com/post/how-to-install-zoom-on-ubuntu-20-04/
+
+
+* Configurations
+
+*** Configure Git
+
+Issue these commands on the client to set up git with global values. 
+
+#+BEGIN_SRC sh
+
+git config --global core.editor emacs
+git config --global user.name "Rakesh Rathod"
+git config --global user.email rakesh@av8rr.com
+git config --global color.status auto
+git config --global color.branch auto
+git config --global color.interactive auto
+git config --global color.diff auto
+
+#+END_SRC
+
+
+* AV8RR
+
+** Certifcates
+
+Renew certificate using
+
+#+BEGIN_SRC sh
+
+certbot --nginx
+
+#+END_SRC
+
+
+Reload nginx and Dovecot
+
+#+BEGIN_SRC sh
+
+systemctl reload nginx
+systemctl restart nginx
+dovecot reload
+
+#+END_SRC
+

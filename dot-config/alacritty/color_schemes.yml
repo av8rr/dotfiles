@@ -1,0 +1,233 @@
+# Schemes-Based Colors
+# Enter all schemes and name them accordingly
+# User can select the scheme by pressing CRTL-F
+schemes:
+  rdr_cutom_purple_dark: &rdr_cutom_purple_dark
+    primary:
+      background: '#150515'
+      foreground: '#ffffff' #'#E1EFFF'
+    cursor:
+      text:       '#ffffff' #'#1E1E3F'
+      cursor:     '#ff00ff' # '#FAD000'
+    normal:
+      black:      '#000000'
+      red:        '#EC3A37'
+      green:      '#75e44c'
+      yellow:     '#FAD000'
+      blue:       '#6943FF'
+      magenta:    '#FF2C70'
+      cyan:       '#80FCFF'
+      white:      '#FFFFFF'
+    bright:
+      black:      '#5C5C61'
+      red:        '#EC3A37'
+      green:      '#3AD900'
+      yellow:     '#FAD000'
+      blue:       '#6943FF'
+      magenta:    '#FB94FF'
+      cyan:       '#80FCFF'
+      white:      '#2D2B55'
+
+  rdr_cutom_purple_medium: &rdr_cutom_purple_medium
+    primary:
+      background: '#1E1E3F'
+      foreground: '#E1EFFF'
+    cursor:
+      text:       '#1E1E3F'
+      cursor:     '#FAD000'
+    normal:
+      black:      '#000000'
+      red:        '#EC3A37'
+      green:      '#75e44c'
+      yellow:     '#FAD000'
+      blue:       '#6943FF'
+      magenta:    '#FF2C70'
+      cyan:       '#80FCFF'
+      white:      '#FFFFFF'
+    bright:
+      black:      '#5C5C61'
+      red:        '#EC3A37'
+      green:      '#3AD900'
+      yellow:     '#FAD000'
+      blue:       '#6943FF'
+      magenta:    '#FB94FF'
+      cyan:       '#80FCFF'
+      white:      '#2D2B55'
+
+  #rdr_cutom_dark2: &rdr_cutom_dark2
+  #  primary:
+  #    background: '#100010'
+  #    foreground: '#839496'
+  #  normal:
+  #    black:   '#083f4d'
+  #    red:     '#dc322f'
+  #    green:   '#169921'
+  #    yellow:  '#b58900'
+  #    blue:    '#268bd2'
+  #    magenta: '#da54da'
+  #    cyan:    '#26958c'
+  #    white:   '#839496'
+  #  # Cursor colors
+  #  cursor:
+  #    text:   '#2c2c2c'
+  #    cursor: '#ff00ff'
+  #  bright:
+  #    black:   '#0c677e'
+  #    red:     '#df5017'
+  #    green:   '#1aba27'
+  #    yellow:  '#daa400'
+  #    blue:    '#2a9dea'
+  #    magenta: '#fe61fe'
+  #    cyan:    '#2db0a5'
+  #    white:   '#b9d2d3'
+
+  schuam_solarized_dark: &schuam_solarized_dark
+    primary:
+      background: '#002b36'
+      foreground: '#839496'
+    normal:
+      black:   '#083f4d'
+      red:     '#dc322f'
+      green:   '#169921'
+      yellow:  '#b58900'
+      blue:    '#268bd2'
+      magenta: '#da54da'
+      cyan:    '#26958c'
+      white:   '#839496'
+    # Cursor colors
+    cursor:
+      text:   '#2c2c2c'
+      cursor: '#ff00ff'
+    bright:
+      black:   '#0c677e'
+      red:     '#df5017'
+      green:   '#1aba27'
+      yellow:  '#daa400'
+      blue:    '#2a9dea'
+      magenta: '#fe61fe'
+      cyan:    '#2db0a5'
+      white:   '#b9d2d3'
+
+  schuam_solarized_light: &schuam_solarized_light
+    primary:
+      background: '#e5dfce'
+      foreground: '#717171'
+    normal:
+      black:   '#d4cfbf'
+      red:     '#cc0000'
+      green:   '#007f00'
+      yellow:  '#939a15'
+      blue:    '#0039d6'
+      magenta: '#b000b0'
+      cyan:    '#00958b'
+      white:   '#717171'
+    # Cursor colors
+    cursor:
+      text:   '#2c2c2c'
+      cursor: '#ff00ff'
+    bright:
+      black:   '#b3afa2'
+      red:     '#ff0000'
+      green:   '#00a800'
+      yellow:  '#ffff00'
+      blue:    '#0033ff'
+      magenta: '#ff00ff'
+      cyan:    '#00c3c3'
+      white:   '#2c2c2c'
+
+  schuam_dark: &schuam_dark
+    primary:
+      background: '#000000'
+      foreground: '#aaaaaa'
+    normal:
+      black:   '#262626'
+      red:     '#cc0000'
+      green:   '#00a100'
+      yellow:  '#a6a600'
+      blue:    '#006cd8'
+      magenta: '#ff00ff'
+      cyan:    '#00a1a1'
+      white:   '#aaaaaa'
+    # Cursor colors
+    cursor:
+      text:   '#2c2c2c'
+      cursor: '#ff00ff'
+    bright:
+      black:   '#626262'
+      red:     '#ff4400'
+      green:   '#00ff00'
+      yellow:  '#ffff00'
+      blue:    '#0080ff'
+      magenta: '#ff55ff'
+      cyan:    '#00eaea'
+      white:   '#dedede'
+
+  afterglow: &afterglow
+    primary:
+      background: '#2c2c2c'
+      foreground: '#d6d6d6'
+      dim_foreground:    '#dbdbdb'
+      bright_foreground: '#d9d9d9'
+      dim_background:    '#202020' # not sure
+      bright_background: '#3a3a3a' # not sure
+    # Cursor colors
+    cursor:
+      text:   '#2c2c2c'
+      cursor: '#ff00ff'
+    normal:
+      black:   '#1c1c1c'
+      red:     '#bc5653'
+      green:   '#909d63'
+      yellow:  '#ebc17a'
+      blue:    '#7eaac7'
+      magenta: '#aa6292'
+      cyan:    '#86d3ce'
+      white:   '#cacaca'
+    bright:
+      black:   '#636363'
+      red:     '#bc5653'
+      green:   '#909d63'
+      yellow:  '#ebc17a'
+      blue:    '#7eaac7'
+      magenta: '#aa6292'
+      cyan:    '#86d3ce'
+      white:   '#f7f7f7'
+    dim:
+      black:   '#232323'
+      red:     '#74423f'
+      green:   '#5e6547'
+      yellow:  '#8b7653'
+      blue:    '#556b79'
+      magenta: '#6e4962'
+      cyan:    '#5c8482'
+      white:   '#828282'
+
+  Ayu_Dark: &Ayu_Dark
+    primary:
+      background: '#0A0E14'
+      foreground: '#B3B1AD'
+    normal:
+      black: '#01060E'
+      red: '#EA6C73'
+      green: '#91B362'
+      yellow: '#F9AF4F'
+      blue: '#53BDFA'
+      magenta: '#FAE994'
+      cyan: '#90E1C6'
+      white: '#C7C7C7'
+    # Cursor colors
+    cursor:
+      text:   '#2c2c2c'
+      cursor: '#ff00ff'
+    bright:
+      black: '#686868'
+      red: '#F07178'
+      green: '#C2D94C'
+      yellow: '#FFB454'
+      blue: '#59C2FF'
+      magenta: '#FFEE99'
+      cyan: '#95E6CB'
+      white: '#FFFFFF'
+
+colors: *Ayu_Dark
+

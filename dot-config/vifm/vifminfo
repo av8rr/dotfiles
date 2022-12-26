@@ -1,0 +1,99 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/rathodr/
+	..
+1639491878
+'b
+	/home/rathodr/bin/
+	..
+1639491878
+'h
+	/home/rathodr/
+	..
+1639491878
+'z
+	/home/rathodr/.config/vifm
+	..
+1639491878
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v1
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/rathodr
+	..
+0
+d/rdr
+	Downloads
+1
+d/
+	rdr
+15
+d/rdr
+	Downloads
+1
+d/
+	rdr
+15
+d/rdr
+	Downloads
+1
+d/
+	rdr
+15
+d/rdr
+	personal
+8
+d/rdr/personal
+	Pictures
+2
+d/rdr/personal/Pictures
+	wallpapers
+1
+d/rdr/personal/Pictures/wallpapers
+	0041.jpg
+44
+d
+
+# Right window history (oldest to newest):
+D/home/rathodr
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:;;q
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0

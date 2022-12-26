@@ -1,0 +1,2 @@
+;;; Generated package description from help-find-org-mode.el  -*- no-byte-compile: t -*-
+(define-package "help-find-org-mode" "20181204.234" "Advise help to find org source over tangled code" '((emacs "24.4")) :commit "c6fa2c8a8e9381572190010a9fa01f2be78f2790" :authors '(("Eric Crosson" . "eric.s.crosson@utexas.com")) :maintainer '("Eric Crosson" . "eric.s.crosson@utexas.com") :keywords '("convenience") :url "https://github.com/EricCrosson/help-find-org-mode")

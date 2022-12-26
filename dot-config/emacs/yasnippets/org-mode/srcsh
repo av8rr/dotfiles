@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: SRCBLOCKSH
+# key: <srcsh
+# --
+
+#+BEGIN_SRC sh
+
+$1
+
+#+END_SRC

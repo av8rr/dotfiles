@@ -1,0 +1,46 @@
+[Added Associations]
+application/x-trash=org.gnome.meld.desktop;
+application/pdf=zathura.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-5ZN2M1.desktop;userapp-Telegram Desktop-RSYCO1.desktop;
+image/jpeg=feh.desktop;gimp.desktop;org.xfce.ristretto.desktop;org.kde.showfoto.desktop;sxiv.desktop;krita_jpeg.desktop;
+text/org=emacsclient.desktop;emacs.desktop;
+inode/directory=xfce4-file-manager.desktop;
+x-scheme-handler/trash=xfce4-file-manager.desktop;
+application/vnd.ms-word.document.macroenabled.12=libreoffice-writer.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
+text/plain=vim.desktop;nvim.desktop;
+image/png=sxiv.desktop;
+
+[Default Applications]
+x-scheme-handler/msteams=teams.desktop
+application/pdf=org.pwmt.zathura.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-RSYCO1.desktop
+inode/directory=xfce4-file-manager.desktop
+x-scheme-handler/trash=xfce4-file-manager.desktop
+application/vnd.ms-word.document.macroenabled.12=libreoffice-writer.desktop
+application/vnd.apple.pages=libreoffice-writer.desktop
+application/vnd.sun.xml.writer=libreoffice-writer.desktop
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop
+application/vnd.sun.xml.writer.template=libreoffice-writer.desktop
+application/vnd.lotus-wordpro=libreoffice-writer.desktop
+application/vnd.wordperfect=libreoffice-writer.desktop
+application/x-hwp=libreoffice-writer.desktop
+application/vnd.oasis.opendocument.text-flat-xml=libreoffice-writer.desktop
+application/vnd.oasis.opendocument.text-web=libreoffice-writer.desktop
+application/prs.plucker=libreoffice-writer.desktop
+application/x-t602=libreoffice-writer.desktop
+application/x-fictionbook+xml=libreoffice-writer.desktop
+application/vnd.palm=libreoffice-writer.desktop
+application/vnd.sun.xml.writer.global=libreoffice-writer.desktop
+application/x-abiword=libreoffice-writer.desktop
+application/x-mswrite=libreoffice-writer.desktop
+application/vnd.stardivision.writer=libreoffice-writer.desktop
+application/x-mobipocket-ebook=calibre-gui.desktop
+application/vnd.comicbook-rar=calibre-gui.desktop
+application/x-cb7=calibre-gui.desktop
+application/x-sony-bbeb=calibre-gui.desktop
+application/vnd.comicbook+zip=calibre-gui.desktop
+application/epub+zip=calibre-gui.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+x-scheme-handler/mailto=brave-browser.desktop

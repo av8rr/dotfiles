@@ -1,0 +1,2 @@
+;;; Generated package description from org-reverse-datetree.el  -*- no-byte-compile: t -*-
+(define-package "org-reverse-datetree" "20221203.259" "Create reverse date trees in org-mode" '((emacs "28.1") (dash "2.19") (org "9.5")) :commit "fca95cd22ed29653f3217034c71ec0ab0a7c7734" :authors '(("Akira Komamura" . "akira.komamura@gmail.com")) :maintainer '("Akira Komamura" . "akira.komamura@gmail.com") :keywords '("outlines") :url "https://github.com/akirak/org-reverse-datetree")

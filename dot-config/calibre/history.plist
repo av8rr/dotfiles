@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lineedit_history_store_config_chooser_query</key>
+	<array/>
+	<key>lineedit_history_store_search_search_author</key>
+	<array>
+		<string>arthur c. clarke</string>
+	</array>
+	<key>lineedit_history_tag_list_search_box_Series</key>
+	<array/>
+	<key>lineedit_history_viewer-search-panel-expression</key>
+	<array>
+		<string>prune</string>
+		<string>magit-discard</string>
+		<string>source</string>
+		<string>clone</string>
+		<string>pull</string>
+		<string>git fetch</string>
+		<string>git pull</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,19 @@
+[global_config]
+  focus = mouse
+  handle_size = 2
+  geometry_hinting = True
+  title_transmit_bg_color = "#3465a4"
+  title_receive_bg_color = "#a40000"
+[keybindings]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

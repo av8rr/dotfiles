@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: SRCBLOCKEL
+# key: <srcel
+# --
+
+#+BEGIN_SRC emacs-lisp
+
+$1
+
+#+END_SRC

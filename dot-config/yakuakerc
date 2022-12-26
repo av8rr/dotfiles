@@ -1,0 +1,18 @@
+[Animation]
+Frames=26
+
+[Appearance]
+HideSkinBorders=true
+TerminalHighlightOnManualActivation=true
+Translucency=true
+
+[Desktop Entry]
+DefaultProfile=Test.profile
+
+[Dialogs]
+FirstRun=false
+
+[Window]
+Height=51
+ShowTabBar=false
+ToggleToFocus=true

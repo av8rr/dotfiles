@@ -1,0 +1,56 @@
+# .dotfiles
+
+Welcome to my .dotfiles
+
+* Purpose
+
+I have always wanted to try new software all the while setting up my ultimate machine. Well, this Github repo should help me get the stable configurations I need to be productive. If you clone my repo, I hope you find it useful or inspirational. Many of the configurations are collected from others such as:
+
+- DistroTube (Derek Taylor)
+- System Crafters (David Wilson)
+- Prot
+- Brodie
+
+* Suggestions
+
+If you have suggestions, please feel free to make them. I will add what I can!
+
+* How to Stow
+
+This section will need to be redone when I recomment my org files.
+
+You have to relink using the GNU stow command. First, go to the directory where the filws are:
+
+#+BEGIN_SRC sh
+
+cd ~/dotfile
+
+#+END_SRC
+
+
+Then link all files in this dir:
+
+#+BEGIN_SRC sh
+
+stow .
+
+#+END_SRC
+
+Then link the individual directory dot-config. Note this requies a target directory:
+
+#+BEGIN_SRC sh
+
+stow -v -t ~/.config dot-config
+stow -v -t ~/.emacs.d dot-emacs.d
+
+#+END_SRC
+
+* Bug Reports
+
+My configurations may not work in your environment. If that is the case, I would like to know as I try to make basic, portable configurations. 
+
+* Final Thoughts...
+
+Good luck! 
+
+ 

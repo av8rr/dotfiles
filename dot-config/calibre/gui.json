@@ -1,0 +1,332 @@
+{
+  "Plugin Updater plugin:plugin updater dialog": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAH1AAABJQAABcYAAAMsAAAB9QAAAUoAAAXGAAADLAAAAAAAAAAAB4AAAAH1AAABSgAABcYAAAMs"
+  },
+  "basic_metadata_widget_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAADAAAA/QAAAWkAAAEZAf////8BAAAAAQA="
+  },
+  "book_details_splitter_horizontal_state": [
+    true,
+    327
+  ],
+  "book_details_widget_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAAEBgAAAOMB/////wEAAAACAA=="
+  },
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAGQA/////wEAAAABAA=="
+  },
+  "booklist_grid": true,
+  "bulk-mde-casing-algorithm": "title_case",
+  "bulk_metadata_window_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAA7AAAATAAABzoAAAQ4AAAAPAAAAE0AAAc5AAAENwAAAAAAAAAACQAAAAA8AAAATQAABzkAAAQ3"
+  },
+  "bulk_metadata_window_tab": 1,
+  "choose-icon-theme-dialog-geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAG3AAAAQAAABToAAAQ2AAABtwAAAGUAAAU6AAAENgAAAAAAAAAAB4AAAAG3AAAAZQAABToAAAQ2"
+  },
+  "cover_browser_splitter_vertical_state": [
+    false,
+    300
+  ],
+  "cover_grid_color": [
+    80,
+    80,
+    80
+  ],
+  "cover_grid_texture": null,
+  "custcol-prefs-table-geometry": [
+    116,
+    103,
+    395,
+    89
+  ],
+  "custom_colors_for_color_dialog": [
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ]
+  ],
+  "default_author_link": null,
+  "duplicates-question-dialog-geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAALJAAABKgAABPAAAALJAAACyQAAAU8AAATwAAACyQAAAAAAAAAAB4AAAALJAAABTwAABPAAAALJ"
+  },
+  "geometry-of-Plugin Updater plugin:plugin updater dialog": {
+    "frame_geometry": {
+      "height": 487,
+      "width": 982,
+      "x": 661,
+      "y": 476
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 483,
+      "width": 978,
+      "x": 663,
+      "y": 478
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 483,
+      "width": 978,
+      "x": 663,
+      "y": 478
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAKVAAAB3AAABmoAAAPCAAAClwAAAd4AAAZoAAADwAAAAAAAAAAACQAAAAKXAAAB3gAABmgAAAPA"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Display",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-calibre_main_window_geometry": {
+    "frame_geometry": {
+      "height": 1400,
+      "width": 2284,
+      "x": 10,
+      "y": 30
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1400,
+      "width": 2284,
+      "x": 10,
+      "y": 30
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1400,
+      "width": 2284,
+      "x": 10,
+      "y": 30
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAKAAAAHgAACPUAAAWVAAAACgAAAB4AAAj1AAAFlQAAAAAAAAAACQAAAAAKAAAAHgAACPUAAAWV"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Display",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-preferences dialog geometry": {
+    "frame_geometry": {
+      "height": 724,
+      "width": 934,
+      "x": 685,
+      "y": 358
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 687,
+      "y": 360
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 687,
+      "y": 360
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAKtAAABZgAABlIAAAQ5AAACrwAAAWgAAAZQAAAENwAAAAAAAAAACQAAAAKvAAABaAAABlAAAAQ3"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Display",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "grid view visible": false,
+  "library_usage_stats": {
+    "/rdr/personal/ebooks": 29
+  },
+  "metasingle_window_geometry3": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAA7AAAATAAABzoAAAQ4AAAAPAAAAE0AAAc5AAAENwAAAAAAAAAACQAAAAA8AAAATQAABzkAAAQ3"
+  },
+  "preferences dialog geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAKmAAABVQAABkkAAAQmAAACpwAAAVYAAAZIAAAEJQAAAAAAAAAACQAAAAKnAAABVgAABkgAAAQl"
+  },
+  "previous_sort_order_BooksView": {
+    "tags": true
+  },
+  "quick_start_guide_added": true,
+  "quickview visible": false,
+  "recently_used_languages": [
+    "English"
+  ],
+  "search bar visible": true,
+  "show_emblems": false,
+  "tag browser search box visible": false,
+  "tag_browser_splitter_horizontal_state": [
+    true,
+    200
+  ]
+}

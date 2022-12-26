@@ -1,0 +1,73 @@
+# AV8RR - Rakesh
+# Personal account
+IMAPAccount rakesh
+Host mail.av8rr.com
+User rakesh@av8rr.com	
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/av8rr-mail/mbsyncpass1.gpg"
+SSLType	IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore rakesh-remote
+Account rakesh 
+
+MaildirStore rakesh-local
+Subfolders Verbatim
+Path ~/av8rr-mail/rakesh/
+Inbox ~/av8rr-mail/rakesh/INBOX
+
+Channel rakesh-default
+Master :rakesh-remote:
+Slave :rakesh-local:
+Patterns *
+Create Both
+SyncState *
+
+
+# AV8RR - Career
+# Career account
+IMAPAccount career
+Host mail.av8rr.com
+User career@av8rr.com	
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/av8rr-mail/mbsyncpass2.gpg"
+SSLType	IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+ 
+IMAPStore career-remote
+Account career 
+
+MaildirStore career-local
+Subfolders Verbatim
+Path ~/av8rr-mail/career/
+Inbox ~/av8rr-mail/career/INBOX
+
+Channel career 
+Master :career-remote:
+Slave :career-local:
+Patterns *
+Create Both
+SyncState *
+
+# AV8RR - temp2022
+# Temp2022 account
+IMAPAccount temp2022
+Host mail.av8rr.com
+User temp2022@av8rr.com	
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/av8rr-mail/mbsyncpass2.gpg"
+SSLType	IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+ 
+IMAPStore temp2022-remote
+Account temp2022
+
+MaildirStore temp2022-local
+Subfolders Verbatim
+Path ~/av8rr-mail/temp2022/
+Inbox ~/av8rr-mail/temp2022/INBOX
+
+Channel temp2022
+Master :temp2022-remote:
+Slave :temp2022-local:
+Patterns *
+Create Both
+SyncState *
+

@@ -1,0 +1,2 @@
+;;; Generated package description from org-tree-slide-pauses.el  -*- no-byte-compile: t -*-
+(define-package "org-tree-slide-pauses" "20201215.146" "Bring the pause command from Beamer to org-tree-slide" '((emacs "24.5") (org-tree-slide "2.8.4")) :commit "f02af7102e9ecef7c3dac0d376d85bbb8c4de4cc" :authors '(("cnngimenez")) :maintainer '("cnngimenez") :keywords '("convenience" "org-mode" "presentation") :url "https://github.com/cnngimenez/org-tree-slide-pauses")

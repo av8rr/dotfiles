@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: TOPLEVELENTRY
+# key: <mtg
+# --
+
+***** $1                                                                    :Mtg:

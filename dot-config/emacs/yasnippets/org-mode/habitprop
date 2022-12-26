@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: HABITPROP
+# key: <hp
+# --
+
+:PROIPERTIES:
+:STYLE:	habit
+:END:

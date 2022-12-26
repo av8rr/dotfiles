@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=sxhkd
+Comment=Simple X hotkey daemon
+Exec=/usr/bin/sxhkd -c /home/av8rr/.config/bspwm/sxhkd/sxhkdrc
+Terminal=false
+Type=Application

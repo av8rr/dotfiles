@@ -1,0 +1,23 @@
+{
+  "add books dialog dir": "/home/rathodr/Downloads",
+  "database location dialog": "/rdr/personal/ebooks",
+  "recursive book import root dir dialog": "/rdr/personal/ebooks-save/Business",
+  "s_r_search_mode": 0,
+  "sort_history": [
+    [
+      "tags",
+      true
+    ],
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "systray_msg": true,
+  "welcome_wizard_device": "default",
+  "welcome_wizard_was_run": true
+}

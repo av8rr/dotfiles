@@ -1,0 +1,43 @@
+* Daily Time Report
+#+BEGIN: clocktable :scope subtree :tags t :maxlevel 5
+#+CAPTION: Clock summary at [2022-05-02 Mon 16:49]
+| Tags | Headline   | Time |
+|------+------------+------|
+|      | *Total time* | *0:00* |
+#+END:
+
+** Start of Day
+:LOGBOOK:
+:END:
+
+%?
+
+** ITSM Stand-Up                                                       :Mtg:
+:LOGBOOK:
+:END:
+
+** SN Triage                                                          :OpEx:
+:LOGBOOK:
+:END:
+
+** General                                                            :OpEx:
+:LOGBOOK:
+:END:
+
+** Process Improvement & Ideas                                       :CapEx:
+:LOGBOOK:
+:END:
+
+** End of Day                                                        :Admin:
+:LOGBOOK:
+:END:
+
+** Administrivia [0/2]
+- [ ] Complete daily notes
+- [ ] Enter time
+
+:LOGBOOK:
+:END:
+
+
+

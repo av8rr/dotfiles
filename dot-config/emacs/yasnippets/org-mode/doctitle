@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: DOCTITLE
+# key: <dt
+# --
+
+#+TITLE:     ${1:title}
+#+AUTHOR:    ${2:"Rakesh Rakesh"}
+#+DATE:      ${3:`(format-time-string "%B %d, %Y")`}
+#+TAGS:	     ${4:tags}   ; Enter :tag1:tag2:tag3:etc:
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+

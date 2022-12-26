@@ -1,0 +1,71 @@
+* %?                                                             :Project:
+
+** Description
+
+
+** Stakeholders
+
+List the interested stakeholders here. In the initial start of the project, it is important to brainstorm who the stakeholders might be, rather than keep a trimmed list - there will be time for that later.
+
+|------+----+-----|
+| Name | IT | Bus |
+|------+----+-----|
+|      |    |     |
+|      |    |     |
+
+** Critical Success Factors
+
+Identify the critical success factors as we know them.
+
+- 
+
+** Timeline
+
+The timeline is important to know. Identify when the project is expected to start and end, and known miletstones. At the beginning, the list may be hectic and unordered. However, this is just to capture thoughts and not meant to be the project management tool.
+
+|------------+---------+---------|
+| Milestone  | Start   | End     |
+|            | (m/d/y) | (m/d/y) |
+|------------+---------+---------|
+| Project    |         |         |
+|------------+---------+---------|
+| Milestone1 |         |         |
+|            |         |         |
+
+** Risks
+
+What risks do we see? How impactful can they be? Impacts are relative. Only PMs can apply sound project managment practices to be sure impacts are standardized across all projects, so don't worry if the h, m ,l are accurate to other projects. Only be concerned they are relative to the risks listed here.
+
+|------+---------|
+| Risk | Impacts |
+|      | (h,m,l) |
+|------+---------|
+|      |         |
+|      |         |
+
+** Issues
+
+Issues are materialized risks. What happened and what is the priority to fix it?
+
+|-------+----------|
+| Issue | Priority |
+|       | (h/m/l)  |
+|-------+----------|
+|       |          |
+|       |          |
+
+** Action Items
+
+Self-explanatory, but be sure to ID who will be on point to take the action item to complete by the due date.
+
+|-------------+----------+-------|
+| Action Item | Due Date | Owner |
+|-------------+----------+-------|
+|             |          |       |
+|             |          |       |
+
+** References
+
+SharePoint
+- 
+

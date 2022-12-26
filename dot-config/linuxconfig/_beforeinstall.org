@@ -1,0 +1,70 @@
+#+TITLE: Install Drive Mappings
+
+During the install process, configure the OS on drive 1 and reference /home and /rdr on drive 2. The following table shows drive setup for drive 1 (SDA) and drive 2 (SDB). It is important that drive 1 contain the OS and supporting mappings while drive 2 only contains the /rdr and /home directoryies.
+
+*NOTE* The OS can be reinstalled as many times as necessary along with the programs. Since /home contains all configurations, the newly installed programs will be configured quickly and use the existing configuration settings.
+
+* Lenovo ThinkPad w520
+
+This laptop has two drives.First internal drive is 500 GB and a second, add-on tray-based is 1 TB for a total of 1.5 TB. Note that /rdr and /home are on the tray-based drive.
+
+|-----------+------+------+------------------|
+| SDA       |      |      |                  |
+|-----------+------+------+------------------|
+| /dev/sda1 | 1.3G | NTFS | Bootable, System |
+| /dev/sda2 | 75G  | NTFS | Windows          |
+| /dev/sda3 | 17G  | NTFS | Lenovo Recovery  |
+| /dev/sda5 | 976M | EXT4 | /boot            |
+| /dev/sda6 | 16G  | Swap | Swap             |
+| /dev/sda7 | 4.1G | EXT4 | /tmp             |
+| /dev/sda8 | 386G | EXT  | /                |
+|           |      |      |                  |
+|-----------+------+------+------------------|
+| SDB       |      |      |                  |
+|-----------+------+------+------------------|
+| /dev/sdb1 | 849G | EXT4 | /rdr             |
+| /dev/sdb2 | 151G | EXT4 | /home            |
+|-----------+------+------+------------------|
+
+
+* Lenovo ThinkPad Extreme Gen 4
+
+This new laptop is a single drive machine. The architecture does not support two drives (at least I have not installed a second drive in the wireless radio space - something I would look into!
+
+|------------+--------+-------+-------------|
+| DRIVE      | SIZE   | TYPE  | MOUNT       |
+|------------+--------+-------+-------------|
+| nvme0n1p1  | 260 MB | FAT32 | /boot/efi   |
+| nvme0n1p2  | 16 MB  |       | MS Reserved |
+| nvme0n1p3  | 539 GB | NTFS  | Basic data  |
+| nvme0n1p4  | 783 MB | NTFS  | Basic data  |
+| nvme0n1p5  | 1.2 GB | EXT4  | /boot       |
+| nvme0n1p6  | 30 GB  | swap  | swap        |
+| nvme0n1p7  | 4 GB   | EXT4  | /tmp        |
+| nvme0n1p8  | 488 GB | EXT4  | /           |
+| nvme0n1p9  | 191 GB | EXT4  | /home       |
+| nvme0n1p10 | 663 GB | EXT4  | /rdr        |
+|------------+--------+-------+-------------|
+
+For reference, see the GPARTED screen:
+[[/rdr/personal/notes/images/2022-01-26_14-17.png]]
+
+
+** LSBLK
+:LOGBOOK:
+- State "TODO"       from              [2022-03-11 Fri 10:06]
+:END:
+
+Note the values in LSBLK do not match the table above. I assume LSBLK reports amount of free space. However, I list this in case we need to compare.
+
+nvme0n1      259:0    0   1.9T  0 disk 
+├─nvme0n1p1  259:1    0   260M  0 part /boot/efi
+├─nvme0n1p2  259:2    0    16M  0 part 
+├─nvme0n1p3  259:3    0 529.9G  0 part 
+├─nvme0n1p4  259:4    0  1000M  0 part 
+├─nvme0n1p5  259:5    0   1.2G  0 part /boot
+├─nvme0n1p6  259:6    0  29.5G  0 part [SWAP]
+├─nvme0n1p7  259:7    0   3.8G  0 part /tmp
+├─nvme0n1p8  259:8    0 488.3G  0 part /
+├─nvme0n1p9  259:9    0 190.7G  0 part /home
+└─nvme0n1p10 259:10   0   663G  0 part /rdr

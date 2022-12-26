@@ -1,0 +1,270 @@
+{
+  "bookmarks_sort": "timestamp",
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 1400,
+      "width": 2284,
+      "x": 10,
+      "y": 30
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1400,
+      "width": 2284,
+      "x": 10,
+      "y": 30
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1400,
+      "width": 2284,
+      "x": 10,
+      "y": 30
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAKAAAAHgAACPUAAAWVAAAACgAAAB4AAAj1AAAFlQAAAAAAAAAACQAAAAAKAAAAHgAACPUAAAWV"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Display",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "local_storage": {
+    "simple_input_history_net_search_url": [
+      "https://google.com/search?q={q}"
+    ]
+  },
+  "main_window_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAASEAAAAHAAACPcAAAWXAAAEhQAAAB0AAAj2AAAFlgAAAAAAAAAACQAAAASFAAAAHQAACPYAAAWW"
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAEOAAAFePwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIcA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAQAAAAAAAAV4AAAAlQD///8AAAABAAAArwAABXj8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAAB9AP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAAAAAFeAAAAOcA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAMkA////AAAH2AAABXgAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "saved-search-settings": {
+    "clone": {
+      "case_sensitive": false,
+      "mode": "normal"
+    },
+    "git fetch": {
+      "case_sensitive": false,
+      "mode": "normal"
+    },
+    "git pull": {
+      "case_sensitive": false,
+      "mode": "normal"
+    },
+    "magit-discard": {
+      "case_sensitive": false,
+      "mode": "normal"
+    },
+    "prune": {
+      "case_sensitive": false,
+      "mode": "normal"
+    },
+    "pull": {
+      "case_sensitive": false,
+      "mode": "normal"
+    },
+    "source": {
+      "case_sensitive": false,
+      "mode": "normal"
+    }
+  },
+  "session_data": {
+    "base_font_size": 30,
+    "book_scrollbar": false,
+    "columns_per_screen": {
+      "landscape": 0,
+      "portrait": 1
+    },
+    "controls_footer": {
+      "left": "empty",
+      "middle": "empty",
+      "right": "progress"
+    },
+    "controls_help_shown_count": 2,
+    "current_color_scheme": "*AV8RR",
+    "footer": {
+      "left": "empty",
+      "middle": "empty",
+      "right": "progress"
+    },
+    "header": {
+      "left": "empty",
+      "middle": "empty",
+      "right": "empty"
+    },
+    "hide_tooltips": null,
+    "highlight_style": {
+      "kind": "color",
+      "type": "builtin",
+      "which": "yellow"
+    },
+    "keyboard_shortcuts": {},
+    "left-margin": {
+      "left": "empty",
+      "middle": "empty",
+      "right": "empty"
+    },
+    "read_mode": "paged",
+    "right-margin": {
+      "left": "empty",
+      "middle": "empty",
+      "right": "empty"
+    },
+    "selection_bar_quick_highlights": [
+      "type:builtin;kind:color;which:yellow;light:undefined;dark:undefined;background-color:undefined;text-decoration-line:undefined;text-decoration-color:undefined;text-decoration-style:undefined"
+    ],
+    "skipped_dialogs": {},
+    "standalone_font_settings": {
+      "mono_family": "Cantarell",
+      "sans_family": "CMU Sans Serif",
+      "serif_family": "CMU Serif"
+    },
+    "standalone_misc_settings": {},
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Scott Chacon, Ben Straub"
+        ],
+        "key": "/rdr/personal/ebooks/Scott Chacon, Ben Straub/Pro Git (34)/Pro Git - Scott Chacon, Ben Straub.epub",
+        "pathtoebook": "/rdr/personal/ebooks/Scott Chacon, Ben Straub/Pro Git (34)/Pro Git - Scott Chacon, Ben Straub.epub",
+        "timestamp": "2022-12-26T20:24:00.060Z",
+        "title": "Pro Git"
+      },
+      {
+        "key": "/rdr/personal/ebooks/Unknown/Magit User Manual (45)/Magit User Manual - Unknown.epub",
+        "pathtoebook": "/rdr/personal/ebooks/Unknown/Magit User Manual (45)/Magit User Manual - Unknown.epub",
+        "timestamp": "2022-12-26T20:21:31.537Z",
+        "title": "Magit User Manual"
+      },
+      {
+        "authors": [
+          "Arthur Conan Doyle"
+        ],
+        "key": "/rdr/personal/ebooks/Arthur Conan Doyle/The Glamour of the Arctic (52)/The Glamour of the Arctic - Arthur Conan Doyle.epub",
+        "pathtoebook": "/rdr/personal/ebooks/Arthur Conan Doyle/The Glamour of the Arctic (52)/The Glamour of the Arctic - Arthur Conan Doyle.epub",
+        "timestamp": "2022-12-26T01:03:36.011Z",
+        "title": "The Glamour of the Arctic"
+      },
+      {
+        "authors": [
+          "John Schember"
+        ],
+        "key": "/rdr/personal/ebooks/John Schember/Quick Start Guide (51)/Quick Start Guide - John Schember.epub",
+        "pathtoebook": "/rdr/personal/ebooks/John Schember/Quick Start Guide (51)/Quick Start Guide - John Schember.epub",
+        "timestamp": "2022-12-22T23:10:01.386Z",
+        "title": "Quick Start Guide"
+      },
+      {
+        "authors": [
+          "Richard Stallman"
+        ],
+        "key": "/rdr/personal/ebooks/Richard Stallman/GNU Emacs Manual (46)/GNU Emacs Manual - Richard Stallman.epub",
+        "pathtoebook": "/rdr/personal/ebooks/Richard Stallman/GNU Emacs Manual (46)/GNU Emacs Manual - Richard Stallman.epub",
+        "timestamp": "2022-12-13T17:29:41.928Z",
+        "title": "GNU Emacs Manual"
+      },
+      {
+        "key": "/rdr/personal/ebooks/Unknown/GNU Emacs Lisp Reference Manual (44)/GNU Emacs Lisp Reference Manual - Unknown.epub",
+        "pathtoebook": "/rdr/personal/ebooks/Unknown/GNU Emacs Lisp Reference Manual (44)/GNU Emacs Lisp Reference Manual - Unknown.epub",
+        "timestamp": "2022-12-13T17:28:58.434Z",
+        "title": "GNU Emacs Lisp Reference Manual"
+      },
+      {
+        "authors": [
+          "Org Mode Developers"
+        ],
+        "key": "/rdr/personal/ebooks/Org Mode Developers/Org Mode Manual (43)/Org Mode Manual - Org Mode Developers.pdf",
+        "pathtoebook": "/rdr/personal/ebooks/Org Mode Developers/Org Mode Manual (43)/Org Mode Manual - Org Mode Developers.pdf",
+        "timestamp": "2022-12-13T16:17:27.231Z",
+        "title": "Org Mode Manual"
+      },
+      {
+        "key": "/rdr/personal/ebooks/Unknown/Learning GNU Emacs 3rd Edition (37)/Learning GNU Emacs 3rd Edition - Unknown.pdf",
+        "pathtoebook": "/rdr/personal/ebooks/Unknown/Learning GNU Emacs 3rd Edition (37)/Learning GNU Emacs 3rd Edition - Unknown.pdf",
+        "timestamp": "2022-11-20T03:26:53.836Z",
+        "title": "Learning GNU Emacs 3rd Edition"
+      },
+      {
+        "authors": [
+          "unknown"
+        ],
+        "key": "/rdr/personal/ebooks/Unknown/Qtile (50)/Qtile - Unknown.epub",
+        "pathtoebook": "/rdr/personal/ebooks/Unknown/Qtile (50)/Qtile - Unknown.epub",
+        "timestamp": "2022-03-28T14:51:53.461Z",
+        "title": "Qtile"
+      },
+      {
+        "authors": [
+          "\"Rakesh Rathod\"BOB"
+        ],
+        "key": "/home/rathodr/.config/emacs/config.pdf",
+        "pathtoebook": "/home/rathodr/.config/emacs/config.pdf",
+        "timestamp": "2021-12-27T05:57:29.530Z",
+        "title": "Rakesh's Emacs Configuration FileOAAOAOABOB"
+      },
+      {
+        "authors": [
+          "Rakesh D. Rathod"
+        ],
+        "key": "/rdr/personal/notes/journal/JRNL20211226-shethiservices.pdf",
+        "pathtoebook": "/rdr/personal/notes/journal/JRNL20211226-shethiservices.pdf",
+        "timestamp": "2021-12-26T20:29:00.491Z",
+        "title": "ShethiServices"
+      },
+      {
+        "authors": [
+          "Rakesh D. Rathod"
+        ],
+        "key": "/rdr/personal/notes/new.pdf",
+        "pathtoebook": "/rdr/personal/notes/new.pdf",
+        "timestamp": "2021-10-09T15:59:50.021Z",
+        "title": "First notes"
+      },
+      {
+        "authors": [
+          "Rakesh D. Rathod"
+        ],
+        "key": "/home/rathodr/test.pdf",
+        "pathtoebook": "/home/rathodr/test.pdf",
+        "timestamp": "2021-09-24T05:01:22.425Z",
+        "title": "test"
+      }
+    ],
+    "user_color_schemes": {
+      "*AV8RR": {
+        "background": "#fffbc0",
+        "foreground": "#000000",
+        "name": "AV8RR"
+      }
+    }
+  },
+  "viewer-search-case-sensitive": false,
+  "viewer-search-mode": "normal"
+}
