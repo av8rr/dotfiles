@@ -57,6 +57,10 @@ super + b ; {b,f,g,q}
 super + g
 	galculator
 
+# Open Scratchpad
+super + u
+    scratchtermtoggle
+
 # Flameshot
 Print
 	flameshot gui

@@ -2,28 +2,28 @@
   "bookmarks_sort": "timestamp",
   "geometry-of-main_window_geometry": {
     "frame_geometry": {
-      "height": 1400,
-      "width": 2284,
-      "x": 10,
-      "y": 30
+      "height": 1380,
+      "width": 1127,
+      "x": 1157,
+      "y": 40
     },
     "full_screened": false,
     "geometry": {
-      "height": 1400,
-      "width": 2284,
-      "x": 10,
-      "y": 30
+      "height": 1376,
+      "width": 1123,
+      "x": 1159,
+      "y": 42
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 1400,
-      "width": 2284,
-      "x": 10,
-      "y": 30
+      "height": 1376,
+      "width": 1123,
+      "x": 1159,
+      "y": 42
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAKAAAAHgAACPUAAAWVAAAACgAAAB4AAAj1AAAFlQAAAAAAAAAACQAAAAAKAAAAHgAACPUAAAWV"
+      "__value__": "AdnQywADAAAAAASFAAAAKAAACOsAAAWLAAAEhwAAACoAAAjpAAAFiQAAAAAAAAAACQAAAASHAAAAKgAACOkAAAWJ"
     },
     "screen": {
       "depth": 24,
@@ -62,7 +62,7 @@
   },
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAEOAAAFePwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIcA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAQAAAAAAAAV4AAAAlQD///8AAAABAAAArwAABXj8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAAB9AP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAAAAAFeAAAAOcA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAMkA////AAAH2AAABXgAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAEOAAAFYPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIcA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAQAAAAAAAAVgAAAAlQD///8AAAABAAAArwAABXj8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAAB9AP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAAAAAFeAAAAOcA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAMkA////AAADTwAABWAAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
   },
   "old_prefs_migrated": true,
   "saved-search-settings": {
@@ -96,8 +96,8 @@
     }
   },
   "session_data": {
-    "base_font_size": 30,
-    "book_scrollbar": false,
+    "base_font_size": 24,
+    "book_scrollbar": true,
     "columns_per_screen": {
       "landscape": 0,
       "portrait": 1
@@ -150,6 +150,24 @@
     "standalone_recently_opened": [
       {
         "authors": [
+          "John Schember"
+        ],
+        "key": "/rdr/personal/ebooks/John Schember/Quick Start Guide (51)/Quick Start Guide - John Schember.epub",
+        "pathtoebook": "/rdr/personal/ebooks/John Schember/Quick Start Guide (51)/Quick Start Guide - John Schember.epub",
+        "timestamp": "2023-01-06T05:37:20.249Z",
+        "title": "Quick Start Guide"
+      },
+      {
+        "authors": [
+          "Richard Stallman"
+        ],
+        "key": "/rdr/personal/ebooks/Richard Stallman/GNU Emacs Manual (46)/GNU Emacs Manual - Richard Stallman.epub",
+        "pathtoebook": "/rdr/personal/ebooks/Richard Stallman/GNU Emacs Manual (46)/GNU Emacs Manual - Richard Stallman.epub",
+        "timestamp": "2022-12-29T01:17:09.692Z",
+        "title": "GNU Emacs Manual"
+      },
+      {
+        "authors": [
           "Scott Chacon, Ben Straub"
         ],
         "key": "/rdr/personal/ebooks/Scott Chacon, Ben Straub/Pro Git (34)/Pro Git - Scott Chacon, Ben Straub.epub",
@@ -171,24 +189,6 @@
         "pathtoebook": "/rdr/personal/ebooks/Arthur Conan Doyle/The Glamour of the Arctic (52)/The Glamour of the Arctic - Arthur Conan Doyle.epub",
         "timestamp": "2022-12-26T01:03:36.011Z",
         "title": "The Glamour of the Arctic"
-      },
-      {
-        "authors": [
-          "John Schember"
-        ],
-        "key": "/rdr/personal/ebooks/John Schember/Quick Start Guide (51)/Quick Start Guide - John Schember.epub",
-        "pathtoebook": "/rdr/personal/ebooks/John Schember/Quick Start Guide (51)/Quick Start Guide - John Schember.epub",
-        "timestamp": "2022-12-22T23:10:01.386Z",
-        "title": "Quick Start Guide"
-      },
-      {
-        "authors": [
-          "Richard Stallman"
-        ],
-        "key": "/rdr/personal/ebooks/Richard Stallman/GNU Emacs Manual (46)/GNU Emacs Manual - Richard Stallman.epub",
-        "pathtoebook": "/rdr/personal/ebooks/Richard Stallman/GNU Emacs Manual (46)/GNU Emacs Manual - Richard Stallman.epub",
-        "timestamp": "2022-12-13T17:29:41.928Z",
-        "title": "GNU Emacs Manual"
       },
       {
         "key": "/rdr/personal/ebooks/Unknown/GNU Emacs Lisp Reference Manual (44)/GNU Emacs Lisp Reference Manual - Unknown.epub",

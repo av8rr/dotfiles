@@ -142,8 +142,8 @@
 ;;   M-Space : Scroll Down
 ;; Set the screen sizing
 ;;
-(global-set-key (kbd "S-SPC") 'scroll-up-command)
-(global-set-key (kbd "M-SPC") 'scroll-down-command)
+(global-set-key (kbd "M-SPC") 'scroll-up-command)
+(global-set-key (kbd "M-S-SPC") 'scroll-down-command)
 (global-set-key (kbd "C-c v") 'reduce-other-window-width)
 
 ;;
@@ -401,12 +401,21 @@
 (use-package dired
 		:ensure nil
 		:commands (dired dired-jump)
-		:bind (("C-x C-j" . dired-jump))
+		:bind (
+					 ("C-x C-j" . dired-jump)
+					 )
 		:custom ((dired-listing-switches "-agho --group-directories-first"))
 		:config
 		(evil-collection-define-key 'normal 'dired-mode-map
 			"h" 'dired-single-up-directory
 			"l" 'dired-single-buffer))
+
+;; (add-hook 'dired-mode-hook
+;;  (lambda ()
+;;   (define-key dired-mode-map (kbd "h")
+;;     (lambda () (interactive) (find-alternate-file "..")))
+;;   ; was dired-up-directory
+;;  ))
 
 (use-package dired-single)
 
@@ -464,6 +473,20 @@
 	:bind ("\C-s" . swiper)
 	)
 
+;; Enable richer annotations using the Marginalia package
+(use-package marginalia
+  ;; Either bind `marginalia-cycle` globally or only in the minibuffer
+  :bind (("M-A" . marginalia-cycle)
+         :map minibuffer-local-map
+         ("M-A" . marginalia-cycle))
+
+  ;; The :init configuration is always executed (Not lazy!)
+  :init
+
+  ;; Must be in the :init section of use-package such that the mode gets
+  ;; enabled right away. Note that this forces loading the package.
+  (marginalia-mode))
+
 (setq ispell-program-name "/usr/bin/hunspell")
 (setq ispell-personal-dictionary "/home/av8rr/.config/dict/standard.dic")
 (setq ispell-hunspell-dict-paths '("/home/av8rr/.config/dict"))
@@ -507,6 +530,9 @@ abort completely with `C-g'."
                    bef aft (if p "loc" "glob")))
       (user-error "No typo at or before point"))))
 
+;;
+;; Set up abbreviations
+;;
 (setq save-abbrevs 'silently)
 (setq-default abbrev-mode t)
 
@@ -724,7 +750,10 @@ abort completely with `C-g'."
   :hook (org-mode . org-fancy-priorities-mode)
   :config
   (unless (char-displayable-p ?❗)
-    (setq org-fancy-priorities-list '("HIGH" "MID" "LOW" "OPTIONAL"))))
+;;    (setq org-fancy-priorities-list '("HIGH" "MID" "LOW" "OPTIONAL"))
+		)
+	)
+(setq org-fancy-priorities-list '("" "" ""))
 
 ;;
 ;; Org Babel and Source Blocks
@@ -813,106 +842,123 @@ abort completely with `C-g'."
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-c C-c" 'org-capture-finalize)
 
-(setq org-agenda-start-with-log-mode t)
 (setq org-log-done 'time)
 (setq org-log-into-drawer t)
-(setq org-agenda-span '5)
 (setq org-treat-insert-todo-headings-as-state-change t)
 (setq org-todo-repeat-to-state "TODO")
 (setq org-treat-S-cursor-todo-selection-as-state-change t)
 
-(setq org-agenda-notes-dir "/rdr/personal/notes/")
-(setq org-agenda-journal-dir (concat org-agenda-notes-dir "journal/"))
-(setq org-templates-directory "~/.config/emacs/org/templates/")
+;;
+;; Agenda view setup
+;;
+(setq org-agenda-start-with-log-mode t)
+(setq org-agenda-span 'week)
+(setq org-agenda-skip-unavailable-files t)
+(setq org-agenda-include-diary t)
+(setq org-agenda-use-time-grid t)
+(setq org-agenda-clockreport-mode nil)
+(setq org-agenda-start-with-clockreport-mode nil)
+(setq org-agenda-show-all-dates t)
+(setq org-agenda-start-with-log-mode t)
 
+;;
+;; Agenda column view format
+;;
 (setq org-columns-default-format "%45ITEM %TODO %PRIORITY %SCHEDULED %TAGS %CLOSED")
 
 ;;
 ;; Setup Notes Filenames
 ;;
+(setq org-agenda-notes-dir "/rdr/personal/notes/")
+(setq org-agenda-journal-dir (concat org-agenda-notes-dir "journal/"))
+(setq org-templates-directory "~/.config/emacs/org/templates/")
 (setq notes-filename (concat org-agenda-notes-dir "notes.org"))
 (setq personal-filename (concat org-agenda-notes-dir "personal.org"))
 (setq journal-filename (concat org-agenda-journal-dir "journal.org"))
 (setq habits-filename (concat org-agenda-journal-dir "habits.org"))
 (setq r2-filename (concat org-agenda-notes-dir "R2.org"))
-(setq av8rr-notes-filename (concat org-agenda-notes-dir "av8rr-notes.org"))
 (setq av8rr-oxy-filename (concat org-agenda-notes-dir "av8rr-oxy.org"))
 (setq av8rr-oxy-projects-filename (concat org-agenda-notes-dir "av8rr-oxy-projects.org"))
+(setq av8rr-oxy-archive-filename (concat org-agenda-notes-dir "/archive/av8rr-oxy.org_archive"))
 			
-;;
-;; Set up templates
-;;
-(setq av8rr-oxy-template (concat org-templates-directory "av8rr-template.org"))
-(setq av8rr-oxy-projects-template (concat org-templates-directory "av8rr-projects-template.org"))
-
 (setq org-agenda-files (append (list
 												notes-filename
 												personal-filename
 												journal-filename
 												habits-filename
 												r2-filename
-												av8rr-notes-filename
 												av8rr-oxy-filename
-												av8rr-oxy-projects-filename)
+												av8rr-oxy-projects-filename
+												av8rr-oxy-archive-filename)
 															 (file-expand-wildcards "/rdr/personal/notes/*-PROJ-*"))
 			)
 
+;;
+;; Capture templates
+;;
+(setq av8rr-oxy-template (concat org-templates-directory "av8rr-template.org"))
+(setq av8rr-oxy-projects-template (concat org-templates-directory "av8rr-projects-template.org"))
+
 (setq org-capture-templates
 			`(
-				("q" "Quick Note" entry (file notes-filename)
-				 "* %U \n\n %?\n\n%a\n %i\n" :empty-lines 1)
-				("t" "Task" entry (file tasks-filename)
-				 "* TODO  %?\nSCHEDULED: %^T\n%i\n" :empty-lines 1)
-				("i" "Idea" entry (file ideas-filename)
-				 "* IDEAS  %? %^G \n\n  %U\n  %a\n  %i\n\n" :empty-lines 1)
-				("p" "Personal File" entry (file+datetree+prompt personal-filename)
-				 "* %U  %? %^G \n\n %i\n\n %a\n" :tree-type day :empty-lines 1)
-				("j" "Journal File" entry (file+datetree+prompt journal-filename)
-				 "* %U  %? %^G \n\n%i" :tree-type day :empty-lines 1)
-				("h" "Habit" entry (file habits-filename)
-				 "* TODO %? %^G\n:PROPERTIES:\n:STYLE: habit\n:END:\n\n" :empty-lines 1)
-				("r" "R2 Kitchens")
-				("r2" "R2 Kitchens Organization" entry (file+datetree+prompt r2-filename)
-				 "* %U  %? %^G \n\n %i\n %a\n" :tree-type day :empty-lines 1) 
 				("a" "AV8RR")
 				("ag" "General")
 				("agn" "Notes" entry (file+datetree+prompt av8rr-notes-filename)
 				 "* %U \n\n %?\n\n%a\n %i\n" :empty-lines 1)
+				("agr" "Reading Notes" entry 
+				 (file+headline av8rr-notes-filename "Reading Notes")
+				 "** %^{Enter the name of the reference} %? \n" :empty-lines 1)
 				("ao" "Oxy")
 				("aos" "Status" entry (file+datetree+prompt av8rr-oxy-filename)
 				 (file, av8rr-oxy-template))
 				("aop" "Project" entry (file av8rr-oxy-projects-filename)
 				 (file, av8rr-oxy-projects-template))
+				("j" "Journal File" entry (file+datetree+prompt journal-filename)
+				 "* %U  %? %^G \n\n%i" :tree-type day :empty-lines 1)
+				("q" "Quick Note" entry (file notes-filename)
+				 "* %U \n\n %?\n\n%a\n %i\n" :empty-lines 1)
+				("r" "R2 Kitchens")
+				("r2" "R2 Kitchens Organization" entry (file+datetree+prompt r2-filename)
+				 "* %U  %? %^G \n\n %i\n %a\n" :tree-type day :empty-lines 1) 
 				)
 			)
+
+;;
+;; Previously used templates
+;;
+				;; ("h" "Habit" entry (file habits-filename)
+				;;  "* TODO %? %^G\n:PROPERTIES:\n:STYLE: habit\n:END:\n\n" :empty-lines 1)
+				;; ("i" "Idea" entry (file ideas-filename)
+				;;  "* IDEAS  %? %^G \n\n  %U\n  %a\n  %i\n\n" :empty-lines 1)
+				;; ("p" "Personal File" entry (file+datetree+prompt personal-filename)
+				;;  "* %U  %? %^G \n\n %i\n\n %a\n" :tree-type day :empty-lines 1)
+				;; ("t" "Task" entry (file tasks-filename)
+				;;  "* TODO  %?\nSCHEDULED: %^T\n%i\n" :empty-lines 1)
 
 (define-key org-mode-map (kbd "C-S-h") 'org-shiftleft)
 (define-key org-mode-map (kbd "C-S-l") 'org-shiftright)
 
 (setq org-todo-keywords
       '(
-				(sequence "TODO(t!)" "ACTIVE(a)" "|" "DONE(d!)" "ON HOLD(h@/!)")
-				(sequence "IDEAS(i)" "SCHEDULED(s)" "IN PROGRESS(p)" "|" "COMPLETE(c!)" "WAIT(w@/!)" "CANCEL(x@)")
+				(sequence "TODO(t!)" "|" "DONE(d!)")  ; Good for basic and for Habits
+				(sequence "BACKLOG(b)" "ACTIVE(a)" "ON-HOLD(h@/!)" "|" "COMPLETE(c!)" "CANCEL(x@)") ; Good for agile or project management
 				)
 			)
+
 (setq org-todo-keyword-faces
       '(("TODO" . (:foreground "red")) 
-				("ACTIVE" . (:foreground "green"))
-				("DONE" . (:foreground "grey"))
-				("ON HOLD" . (:foreground "yellow"))
-				("IDEAS" . (:foreground "magenta"))
-				("SCHEDULED" . (:foreground "red"))
-				("IN PROGRESS" . (:foreground "green"))
-				("COMPLETE" . (:foreground "grey"))
-				("WAIT" . (:foreground "yellow"))
-        ("CANCEL" . (:foreground "blue" :weight bold)))
+				("DONE" . (:foreground "green"))
+				("BACKLOG" . (:foreground "magenta"))
+				("ACTIVE" . (:foreground "Yellow"))
+				("ON-HOLD" . (:foreground "orange"))
+				("COMPLETE" . (:foreground "green"))
+        ("CANCEL" . (:foreground "grey" :weight bold)))
 			)
 
 (setq todo-action-head "To Dos:")
-(setq ideas-action-head "Next Actions:")
-(setq plan-action-head "Planning Phase:")
+(setq backlog-action-head "Backlog:")
 (setq active-action-head "Active / In Process:")
-(setq waiting-head  "On Hold / Waiting:")
+(setq onhold-head  "On Hold:")
 (setq complete-head "Completed Items / Cancelled:")
 
 (setq 
@@ -925,42 +971,48 @@ abort completely with `C-g'."
 		nil)
    ("g" "GTD View"
     (
-		 (agenda ""       ((org-deadline-warning-days 7)) )
+		 (agenda ""       
+						 (
+							(org-deadline-warning-days 7)
+							) 
+						 )
 		 (todo "TODO"     ((org-agenda-overriding-header todo-action-head)))
-		 (todo "IDEAS"    ((org-agenda-overriding-header ideas-action-head)))
-		 (todo "PLAN"     ((org-agenda-overriding-header plan-action-head)))
+		 (todo "BACKLOG"    ((org-agenda-overriding-header backlog-action-head)))
 		 (todo "ACTIVE"   ((org-agenda-overriding-header active-action-head)))
-		 (todo "WAIT"     ((org-agenda-overriding-header waiting-head)))
+		 (todo "ON-HOLD"     ((org-agenda-overriding-header onhold-head)))
 		 (todo "COMPLETE" ((org-agenda-overriding-header complete-head)))
 		 nil)
     )
-   )
+   ("W" "Weekly review"
+		(
+     agenda ""
+						(
+						 (org-agenda-start-day "-14d")
+						 (org-agenda-span 28)
+						 (org-agenda-skip-function '(org-agenda-skip-entry-if 'timestamp))
+						 (org-agenda-start-on-weekday 1)
+						 )
+						)
+		)
+	 )
  )
 
-(add-to-list 'org-agenda-custom-commands
-             '("W" "Weekly review"
-               agenda ""
-               ((org-agenda-start-day "-14d")
-                (org-agenda-span 28)
-								(org-agenda-skip-function '(org-agenda-skip-entry-if 'timestamp))
-								(org-agenda-start-on-weekday 1))))
-
 ;;
-;; Habit Tracker
+;; Set up the modules to use
 ;; 
-;; Setup habit tracker with Org-mode
-(add-to-list 'org-modules 'org-habit t)
-(require 'org-habit)
-(setq org-habit-show-habits-only-for-today t)
-(setq org-habit-graph-column 60)
-(setq org-habit-today-glyph ?‖)
-(setq org-habit-completed-glyph ?✓)
-
-
 (custom-set-variables
  '(org-modules
    '(ol-bbdb ol-bibtex ol-docview ol-doi ol-eww ol-gnus org-habit ol-info ol-irc ol-mhe ol-rmail ol-w3m))
  '(org-pretty-tags-agenda-unpretty-habits nil))
+
+(add-to-list 'org-modules 'org-habit t)
+
+(require 'org-habit)
+(setq org-habit-show-habits-only-for-today t)
+(setq org-habit-following-days 7)
+(setq org-habit-graph-column 60)
+(setq org-habit-completed-glyph ?✓)
+(setq org-habit-today-glyph ?)
 
 (setq org-archive-location "archive/%s_archive::")
 
@@ -993,7 +1045,7 @@ abort completely with `C-g'."
 		 ("a" "AV8RR")
 		 ("ao" "Oxy" plain
       "* %U  %^GProject:\n\n%?\n%a"
-      :if-new (file+head "AV8RR-OXY-PROJ-%<%Y%m%d%H%M%S>${slug}.org" "#+Title: ${title}\n\n")
+      :if-new (file+head "AV8RR-OXY-PROJ-%<%Y%m%d%H%M%S>-${slug}.org" "#+Title: ${title}\n\n")
       :unnarrowed t)
      ("n" "Note" plain 
       "* %?"
@@ -1073,7 +1125,7 @@ abort completely with `C-g'."
 																				; \C-c n d b (org-roam-dailies-goto-previous-note) - 98
 																				; \C-c n d f (org-roam-dailies-goto-next-note) - 102
 																				; \C-c n d y (org-roam-dailies-goto-yesterday) - 121
-																				; \C-c n d d (org-roam-dailies-goto-today)) - 100 
+																				; \C-c n d d (org-roam-dailies-goto-today) - 100 
 																				; \C-c n d t (org-roam-dailies-goto-tomorrow) - 116
   :config
   (require 'org-roam-dailies) ;; Ensure the keymap is available
@@ -1102,11 +1154,44 @@ abort completely with `C-g'."
 ;; M-: (org-publish "project name" t)  <== use this to force publish all files
 (setq org-publish-project-alist
       '(
+				("cooking-at-rajbhogstudios"
+				 :base-directory "/rdr/projects/r2"
+				 :base-extension "org"
+				 :publishing-directory "/rdr/business/R2/projects/training/prod/public_html/"
+				 :publishing-function org-html-publish-to-html
+				 :recursive t
+				 :headline-levels 4             ; Just the default for this project.
+				 :auto-preamble t
+				 )
+				("r2-css"
+				 :base-directory "/rdr/projects/r2/css/"
+				 :base-extension "css"
+				 :publishing-directory "/rdr/business/R2/projects/training/prod/public_html/css/"
+				 :publishing-function org-publish-attachment
+				 :recursive t
+				 :auto-preamble t
+				 )
+
+				("r2-images"
+				 :base-directory "/rdr/projects/r2/img/"
+				 :base-extension "jpg\\|png"
+				 :publishing-directory "/rdr/business/R2/projects/training/prod/public_html/img/"
+				 :publishing-function org-publish-attachment
+				 :recursive t
+				 :auto-preamble t
+				 )
+				("r2-src"
+				 :base-directory "/rdr/projects/r2/src/"
+				 :base-extension "css\\|js\\|setup"
+				 :publishing-directory "/rdr/business/R2/projects/training/prod/public_html/src/"
+				 :publishing-function org-publish-attachment
+				 :recursive t
+				 :auto-preamble t
+				 )
 				("av8rrhome"
 				 :base-directory "/rdr/projects/av8rr"
 				 :base-extension "org"
 				 :publishing-directory "/rdr/projects/prod/public_html_av8rr/"
-				 :publishing-directory "/rdr/projects/av8rr/public_html/"
 				 :publishing-function org-html-publish-to-html
 				 :recursive t
 				 :headline-levels 4             ; Just the default for this project.
@@ -1141,6 +1226,7 @@ abort completely with `C-g'."
 				 :auto-preamble t
 				 )
 				("AV8RR-Site" :components("src" "css" "images" "av8rrhome"))
+				("Cooking @ Rajbhog Studios" :components("r2-src" "r2-css" "r2-images" "cooking-at-rajbhogstudios"))
 				)
 			)
 

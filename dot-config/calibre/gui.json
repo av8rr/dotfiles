@@ -15,6 +15,10 @@
     "__class__": "bytearray",
     "__value__": "AAAA/wAAAAEAAAACAAAEBgAAAOMB/////wEAAAACAA=="
   },
+  "book_info_dialog_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABXgAAAV4B/////wEAAAABAA=="
+  },
   "book_list_pin_splitter_state": {
     "__class__": "bytearray",
     "__value__": "AAAA/wAAAAEAAAACAAABAAAAAGQA/////wEAAAABAA=="
@@ -200,30 +204,81 @@
       }
     }
   },
-  "geometry-of-calibre_main_window_geometry": {
+  "geometry-of-book_info_dialog_geometry": {
     "frame_geometry": {
-      "height": 1400,
-      "width": 2284,
-      "x": 10,
-      "y": 30
+      "height": 1344,
+      "width": 1106,
+      "x": 599,
+      "y": 48
     },
     "full_screened": false,
     "geometry": {
-      "height": 1400,
-      "width": 2284,
-      "x": 10,
-      "y": 30
+      "height": 1340,
+      "width": 1102,
+      "x": 601,
+      "y": 50
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 1400,
-      "width": 2284,
-      "x": 10,
-      "y": 30
+      "height": 1340,
+      "width": 1102,
+      "x": 601,
+      "y": 50
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAKAAAAHgAACPUAAAWVAAAACgAAAB4AAAj1AAAFlQAAAAAAAAAACQAAAAAKAAAAHgAACPUAAAWV"
+      "__value__": "AdnQywADAAAAAAJXAAAAMAAABqgAAAVvAAACWQAAADIAAAamAAAFbQAAAAAAAAAACQAAAAJZAAAAMgAABqYAAAVt"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Display",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2304
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 2304,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-calibre_main_window_geometry": {
+    "frame_geometry": {
+      "height": 1380,
+      "width": 2264,
+      "x": 20,
+      "y": 40
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1376,
+      "width": 2260,
+      "x": 22,
+      "y": 42
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1376,
+      "width": 2260,
+      "x": 22,
+      "y": 42
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAUAAAAKAAACOsAAAWLAAAAFgAAACoAAAjpAAAFiQAAAAAAAAAACQAAAAAWAAAAKgAACOkAAAWJ"
     },
     "screen": {
       "depth": 24,
@@ -304,7 +359,7 @@
   },
   "grid view visible": false,
   "library_usage_stats": {
-    "/rdr/personal/ebooks": 29
+    "/rdr/personal/ebooks": 43
   },
   "metasingle_window_geometry3": {
     "__class__": "bytearray",

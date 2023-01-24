@@ -1,5 +1,5 @@
 * Daily Time Report
-#+BEGIN: clocktable :scope subtree :tags t :maxlevel 5
+#+BEGIN: clocktable :scope subtree :tags t :maxlevel 6
 #+CAPTION: Clock summary at [2022-05-02 Mon 16:49]
 | Tags | Headline   | Time |
 |------+------------+------|

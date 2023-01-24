@@ -946,7 +946,7 @@
 	       ("Markus Triska" . "triska@metalevel.at"))
 	      (:commit . "cfcdf9e42821d246b7fbc84877aa4ecacc184a1c"))])
  (eev .
-      [(20221204)
+      [(20221227)
        ((emacs
 	 (24 4)))
        "Support for e-scripts (eepitch blocks, elisp hyperlinks, etc)" tar
@@ -955,7 +955,7 @@
 	(:maintainer "Eduardo Ochs" . "eduardoochs@gmail.com")
 	(:authors
 	 ("Eduardo Ochs" . "eduardoochs@gmail.com"))
-	(:commit . "1908ace318dfce85740f7596bc51b162182d4c84"))])
+	(:commit . "94b49dbfbce8cbef6f8cee1bb63dd86c6e9c776a"))])
  (ef-themes .
 	    [(0 10 0)
 	     ((emacs
@@ -1068,7 +1068,7 @@
 		    ("Omar Antolín Camarena" . "omar@matem.unam.mx"))
 		   (:commit . "bd603d8f3b1bcff34aee2dc4b7b36dc7912b9b26"))])
  (ement .
-	[(0 5 1)
+	[(0 5 2)
 	 ((emacs
 	   (27 1))
 	  (map
@@ -1089,7 +1089,7 @@
 	  (:maintainer "Adam Porter" . "adam@alphapapa.net")
 	  (:authors
 	   ("Adam Porter" . "adam@alphapapa.net"))
-	  (:commit . "e18a6c9ff12bd73e800012693de2e89b28d6bb1a"))])
+	  (:commit . "58ea59e80c5a68098c83413c49622aa0b08d7579"))])
  (emms .
        [(12)
 	((cl-lib
@@ -1908,7 +1908,7 @@
 	(:url . "https://elpa.gnu.org/packages/map.html")
 	(:commit . "9da2efb670574b473ab864ae0456b4f1b38e680b"))])
  (marginalia .
-	     [(0 15)
+	     [(1 0)
 	      ((emacs
 		(27 1)))
 	      "Enrich existing commands with completion annotations" tar
@@ -1916,7 +1916,7 @@
 	       (:maintainer "Omar Antolín Camarena <omar@matem.unam.mx>, Daniel Mendler" . "mail@daniel-mendler.de")
 	       (:authors
 		("Omar Antolín Camarena <omar@matem.unam.mx>, Daniel Mendler" . "mail@daniel-mendler.de"))
-	       (:commit . "cc7a086cd7816ad41ff004c61c41bdd26ec3ea0b"))])
+	       (:commit . "4c8f6b8848cc47d70431adb74864967cc5986895"))])
  (markchars .
 	    [(0 2 2)
 	     nil "Mark chars fitting certain characteristics" single
@@ -2240,7 +2240,7 @@
 	      (:maintainer "Michael Heerdegen" . "michael_heerdegen@web.de")
 	      (:url . "https://github.com/michael-heerdegen/on-screen.el"))])
  (orderless .
-	    [(0 8)
+	    [(1 0)
 	     ((emacs
 	       (26 1)))
 	     "Completion style for matching regexps in any order" tar
@@ -2249,7 +2249,7 @@
 	      (:maintainer "Omar Antolín Camarena" . "omar@matem.unam.mx")
 	      (:authors
 	       ("Omar Antolín Camarena" . "omar@matem.unam.mx"))
-	      (:commit . "004cee6b8e01f8eb0cb1c683d0a637b14890600f"))])
+	      (:commit . "847694e78c12d903d5e3f6cb365a5d3b984db537"))])
  (org .
       [(9 6)
        ((emacs
@@ -3577,7 +3577,7 @@
 		  ("Wilson Snyder" . "wsnyder@wsnyder.org"))
 		 (:commit . "2c2ecb46b0ad3e841ac9551e3a80d02893cdf6ec"))])
  (vertico .
-	  [(0 29)
+	  [(1 0)
 	   ((emacs
 	     (27 1)))
 	   "VERTical Interactive COmpletion" tar
@@ -3585,7 +3585,7 @@
 	    (:maintainer "Daniel Mendler" . "mail@daniel-mendler.de")
 	    (:authors
 	     ("Daniel Mendler" . "mail@daniel-mendler.de"))
-	    (:commit . "cacb0bd76153790ba6ecc67921deed236c96371e"))])
+	    (:commit . "af1c893f3891902162e32f73f062213436636567"))])
  (vertico-posframe .
 		   [(0 6 0)
 		    ((emacs

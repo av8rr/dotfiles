@@ -40,6 +40,7 @@
                         '(org-link ((t (:foreground "#00ff00"))))
 	                      '(org-meta-line ((t (:foreground "#7c6f64" :height 120))))
  	                      '(org-table ((t (:inherit default :foreground "#42a2f3" :background "#000000"))))
+												'(org-priority ((t (:foreground "#6cbdfb"))))
 	                      '(mu4e-title-face ((t (:inherit doom-modeline-spc :foreground "#ffffff"))))
 												'(mu4e-context-face ((t (:inherit mu4e-title-face :weight bold))))
 												)

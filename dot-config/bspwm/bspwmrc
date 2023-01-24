@@ -77,6 +77,9 @@ bspc rule -a Oblogout state=floating
 #bspc rule -a Xfce4-appfinder state=floating sticky=on
 bspc rule -a Xfce4-terminal state=floating
 
+kitty --class scratchterm &
+bspc rule -a scratchterm sticky=on state=floating hidden=on
+
 #Tiled applications
 bspc rule -a Gnome-disks state=tiled
 bspc rule -a Xfce4-settings-manager state=tiled

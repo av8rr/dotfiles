@@ -93,4 +93,4 @@ source ~/.config/nnn/nnn-custom.sh
 
 source $ZRESDIR/alias.sh
 
-# $HOME/.ssh/startssh
+$HOME/.ssh/startssh

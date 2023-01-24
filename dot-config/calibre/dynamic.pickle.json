@@ -1,6 +1,13 @@
 {
-  "add books dialog dir": "/home/rathodr/Downloads",
+  "add books dialog dir": "/rdr/personal/ebooks/Srila Prabhupada",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
   "database location dialog": "/rdr/personal/ebooks",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "6.11"
+    ]
+  },
   "recursive book import root dir dialog": "/rdr/personal/ebooks-save/Business",
   "s_r_search_mode": 0,
   "sort_history": [

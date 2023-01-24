@@ -12,6 +12,6 @@ alias    em=emacs
 alias    v=nvim
 alias    vim=vim -S ~/.config/vim/.vimrc -i ~/.config/vim/.viminfo
 
-alias    grep=egrep --color
+alias    grep=grep -E --color
 
 alias    news=newsboat -C ~/.config/newsboat/newsboatrc -u ~/.config/newsboat/urls
